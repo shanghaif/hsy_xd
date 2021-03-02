@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>好食源</title>
+    <script src="/cyberplayer.js"></script>
+    <script src="/config.js"></script>
+    <script src="/ezuikit.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=uRhBKfzW36pGW8KGkyAhpwXDYwmjNcZP"></script> 
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+   <!-- <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?75e06fec1af16cc388c5fec6147a1bbe";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script> -->
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but dsmall doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!-- <script type="text/javascript">
+      function plusReady() {
+        console.log('00000000')
+        var zxlmweb = plus.webview.create("https://h.ihaosy.com")
+        zxlmweb.show(); // 显示窗口
+        var first = null;
+        plus.key.addEventListener("backbutton", function() { //监听返回按键
+          zxlmweb.canBack(function(e) { //监听webview窗口是否可以返回
+            if (e.canBack) { //可以返回
+              console.log('可以返回')
+              zxlmweb.back(); //返回上一页面
+            } else { //不可以返回
+              console.log('不可以返回')
+              //处理逻辑：1秒内，连续两次按返回键，则退出应用；
+              //首次按键，提示‘再按一次退出应用’
+              if (!first) {
+                first = new Date().getTime();
+                console.log('再按一次退出应用');
+                plus.nativeUI.toast( "再按一次退出应用");  
+                setTimeout(function() {
+                  first = null;
+                }, 2000);
+              } else {
+                console.log('退出了')
+                if (new Date().getTime() - first < 2000) {
+                  plus.runtime.quit(); //退出app
+                }
+              }
+            }
+          });
+        }, true);
+        }
+        if (window.plus) {
+          plusReady();
+        } else {
+          document.addEventListener('plusready', plusReady, false);
+        }
+    </script> -->
+  </body>
+</html>

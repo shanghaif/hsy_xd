@@ -1,0 +1,142 @@
+.hsy_main{
+	// 消除 下划线
+	.none:after {
+		content: '';
+		display: none;
+	}
+
+	// 输入框 样式
+	.mint-cell {
+		min-height: 48px;
+		&:after {
+			// content: '';
+			// position: absolute;
+			// z-index: 1;
+			// pointer-events: none;
+			// background-color: #e5e5e5;
+			// height: 1px;
+			// right: 0% !important;
+			// width: 92%;
+
+			content: "";
+			position: absolute;
+			z-index: 1;
+			pointer-events: none;
+			background-color: #EFEFEF;
+			height: 1px;
+			width: 96%;
+			left: auto!important;
+			right: 0 !important;
+			bottom: 0;
+		}
+
+		.mint-cell-wrapper {
+			padding: 0rem 1.43rem;
+			font-size: 1.18rem;
+			color: #161616;
+
+			.mint-field-core {
+				text-align: right;
+				// padding-top: .28rem;
+				line-height: 1;
+				color: #6f6f6f;
+			}
+
+			.mint-cell-title {
+				flex: unset;
+				width: 7rem;
+				width: 120px;
+				width: 32% !important;
+
+				.mint-cell-text {
+					vertical-align: revert;
+				}
+			}
+
+			.mint-cell-value {
+				width: 68% !important;
+				justify-content: flex-end;
+				align-items: center;
+			}
+		}
+
+		input::-webkit-input-placeholder {
+			/* WebKit browsers */
+			color: #c6c6c6;
+		}
+
+		select {
+			direction: rtl;
+		}
+		.ui-form-input {
+			color: #6f6f6f;
+			font-size: 1.18rem;
+			text-align: right;
+		}
+		.ab_right {
+			padding-right: 1rem;
+			&::-webkit-input-placeholder {
+				/* WebKit browsers 适配谷歌 */
+				color: #6f6f6f;
+			}
+		}
+	}
+
+	// 统一 按钮 样式
+
+	// 按钮 统一样式
+	button.hsy_btn {
+		background: linear-gradient(90deg, rgba(252, 105, 82, 1) 0%, rgba(229, 50, 22, 1) 100%);
+		box-shadow: 0px 0px 20px 0px rgba(251, 104, 84, 0.5);
+		border-radius: 40px;
+		color: #fff;
+		width: 92%;
+		font-size: 1.33rem;
+		height: 3.4rem;
+	}
+
+	button.hsy_f {
+		position: fixed;
+		bottom: 4%;
+		left: 4%;
+		z-index: 1;
+	}
+
+	button.hsy_d {
+		margin: 3rem auto;
+	}
+
+	// switch
+	.mint-switch-input:checked + .mint-switch-core {
+		background: linear-gradient(89deg, #fc6952 0%, #e53216 99%);
+		border: 0;
+	}
+	.mint-switch-core {
+		width: 4rem !important;
+		height: 2.09rem !important;
+		border-radius: 1.9rem!important;
+		background-color: #E2E2E2;
+		border: none!important;
+	}
+	.mint-switch-input:checked + .mint-switch-core::after {
+		transform: translateX(2.36rem) translateY(-53%) !important;
+	}
+	.mint-switch-core::after {
+		width: 1.6rem !important;
+		position: absolute !important;
+		top: 50% !important;
+		transform: translate(0, -53%) !important;
+		height: 1.6rem !important;
+	}
+	// .mint-switch-input:checked + .mint-switch-core::before {
+	// 	width: 3.8rem;
+	// 	height: 1.9rem;
+	// 	border-radius: 1.6rem!important;
+	// }
+	.mint-switch-core::before {
+		width: 3.8rem !important;
+		height: 1.9rem !important;
+		background-color: #E2E2E2!important;
+	}
+
+}
